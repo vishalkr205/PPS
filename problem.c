@@ -267,18 +267,41 @@ int main()
 // }
 
 // 11.
+    // {
+    //     int i,j;
+    //     for ( i = 1; i <= 5; i++)
+    //     {
+    //         for ( j = 1; j <= i ; j++)
+    //         {
+    //             if ((i + j) % 2 == 0)
+    //             {
+    //                 printf("1");
+    //             }
+    //             else
+    //                 printf("0");
+    //         }
+    //         printf("\n");
+    //     }
+    //     return 0;
+    // }
+
+    // 12.
     {
         int i,j;
-        for ( i = 1; i <= 5; i++)
+        for ( i = 1; i <= 4; i++)
         {
-            for ( j = 1; j <= i ; j++)
+            for ( j = 1; j <= i; j++)
             {
-                if ((i + j) % 2 == 0)
-                {
-                    printf("1");
-                }
-                else
-                    printf("0");
+                printf("%d ", j);
+            }
+            for ( j = i + 1 ; j <= 8-i; j++)
+            {
+                printf("  ");
+            }
+            
+            for ( j = i; j >= 1; j--)
+            {
+                printf("%d ", j);
             }
             printf("\n");
         }

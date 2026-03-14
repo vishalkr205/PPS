@@ -245,23 +245,42 @@ int main()
 // }
 
 // 10.
-{
-    int i,j;
-    for ( i = 1; i <= 5; i++)
+// {
+//     int i,j;
+//     for ( i = 1; i <= 5; i++)
+//     {
+//         for ( j = 1; j <= i; j++)
+//         {
+//             printf("*");
+//         }
+//         printf("\n");
+//     }
+//     for ( i = 6; i <= 9; i++)
+//     {
+//         for ( j = 1; j <= 10-i; j++)
+//         {
+//             printf("*");
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+// 11.
     {
-        for ( j = 1; j <= i; j++)
+        int i,j;
+        for ( i = 1; i <= 5; i++)
         {
-            printf("*");
+            for ( j = 1; j <= i ; j++)
+            {
+                if ((i + j) % 2 == 0)
+                {
+                    printf("1");
+                }
+                else
+                    printf("0");
+            }
+            printf("\n");
         }
-        printf("\n");
+        return 0;
     }
-    for ( i = 6; i <= 9; i++)
-    {
-        for ( j = 1; j <= 10-i; j++)
-        {
-            printf("*");
-        }
-        printf("\n");
-    }
-    return 0;
-}

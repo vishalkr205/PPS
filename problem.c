@@ -374,33 +374,33 @@ int main()
     // }
 
 // 17.
-    {
-        int i,j,k;
-        for ( i = 1; i <= 4; i++)
-        {   
-            // for spaces
-            for ( j = 1; j <= 4-i ; j++)
-            {
-                printf("  ");
-            }
-            // printf("\n");
-            k='A';
-            for ( j = 1; j <= i; j++)
-            {
-                printf("%c ", k);
-                k++; 
-            }
-            k = k-2;
-            for ( j = i-1; j >= 1; j--)
-            {
-                printf("%c ", k);
-                k--;
-            }
+    // {
+    //     int i,j,k;
+    //     for ( i = 1; i <= 4; i++)
+    //     {   
+    //         // for spaces
+    //         for ( j = 1; j <= 4-i ; j++)
+    //         {
+    //             printf("  ");
+    //         }
+    //         // printf("\n");
+    //         k='A';
+    //         for ( j = 1; j <= i; j++)
+    //         {
+    //             printf("%c ", k);
+    //             k++; 
+    //         }
+    //         k = k-2;
+    //         for ( j = i-1; j >= 1; j--)
+    //         {
+    //             printf("%c ", k);
+    //             k--;
+    //         }
             
-            printf("\n");
-        }
-        return 0;
-    }
+    //         printf("\n");
+    //     }
+    //     return 0;
+    // }
 // 18.
     // {
     //     int i,j;
@@ -418,3 +418,35 @@ int main()
     //     }
     //     return 0;
     // }
+
+// 19.
+    {
+        int i,j;
+        for ( i = 1; i <= 5; i++)
+        {
+            for ( j = 1; j <= 10; j++)
+            {
+                if(j<=6-i||j>=5+i)
+                {
+                    printf("*");
+                }
+            else
+                printf(" ");
+            }
+            printf("\n");
+        }
+        for ( i = 6; i <= 10; i++)
+        {
+            for ( j=1; j <= 10;j++)
+            {
+                if (j<=i-5||j>=16-i)
+            {
+                printf("*");
+            }
+            else
+                printf(" ");
+            }
+            printf("\n");
+        }
+        return 0;
+    }

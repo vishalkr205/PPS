@@ -309,17 +309,112 @@ int main()
     // }
 
     // 13.
+    // {
+    //     int i,j,k;
+    //     k=1;
+    //     for ( i = 1; i <= 5; i++)
+    //     {
+    //         for ( j = 1; j <= i; j++)
+    //         {
+    //             printf("%d ", k);
+    //             k++;
+    //         }
+    //         printf("\n");
+    //     }
+    //     return 0;
+    // }
+
+    // 14.
+        // {
+        //     int i,j,k;
+        //     for ( i = 1; i <= 5; i++)
+        //     {
+        //         k='A';
+        //         for ( j = 1; j <= i; j++)
+        //         {
+        //             printf("%c ",k);
+        //             k++;
+        //         }
+        //         printf("\n");
+        //     }
+        //     return 0;
+        // }
+
+// 15.
+    // {
+    //     int i,j,k;
+    //     for ( i = 5; i >= 1; i--)
+    //     {
+    //         k='A';
+    //         for ( j = 1; j <= i; j++)
+    //         {
+    //             printf("%c ", k);
+    //             k++;
+    //         }
+    //         printf("\n");
+    //     }
+    //     return 0;
+    // }
+
+// 16.
+    // {
+    //     int i,j,k;
+    //     k='A';
+    //     for ( i = 1; i <= 5; i++)
+            
+    //     {
+    //         for ( j = 1; j <= i; j++)
+    //         {
+    //             printf("%c ", k);
+    //         }
+    //         printf("\n");
+    //         k++;
+    //     }
+    //     return 0;
+    // }
+
+// 17.
     {
         int i,j,k;
-        k=1;
-        for ( i = 1; i <= 5; i++)
-        {
+        for ( i = 1; i <= 4; i++)
+        {   
+            // for spaces
+            for ( j = 1; j <= 4-i ; j++)
+            {
+                printf("  ");
+            }
+            // printf("\n");
+            k='A';
             for ( j = 1; j <= i; j++)
             {
-                printf("%d ", k);
-                k++;
+                printf("%c ", k);
+                k++; 
             }
+            k = k-2;
+            for ( j = i-1; j >= 1; j--)
+            {
+                printf("%c ", k);
+                k--;
+            }
+            
             printf("\n");
         }
         return 0;
     }
+// 18.
+    // {
+    //     int i,j;
+    //     char k;
+    //     for ( i = 1; i <= 5; i++)
+    //     {
+    //         k='F';
+    //         k=k-i;
+    //         for ( j = 1; j <= i; j++)
+    //         {
+    //             printf("%c ",k);
+    //             k++;
+    //         }
+    //         printf("\n");
+    //     }
+    //     return 0;
+    // }

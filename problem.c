@@ -286,22 +286,38 @@ int main()
     // }
 
     // 12.
+    // {
+    //     int i,j;
+    //     for ( i = 1; i <= 4; i++)
+    //     {
+    //         for ( j = 1; j <= i; j++)
+    //         {
+    //             printf("%d ", j);
+    //         }
+    //         for ( j = i + 1 ; j <= 8-i; j++)
+    //         {
+    //             printf("  ");
+    //         }
+            
+    //         for ( j = i; j >= 1; j--)
+    //         {
+    //             printf("%d ", j);
+    //         }
+    //         printf("\n");
+    //     }
+    //     return 0;
+    // }
+
+    // 13.
     {
-        int i,j;
-        for ( i = 1; i <= 4; i++)
+        int i,j,k;
+        k=1;
+        for ( i = 1; i <= 5; i++)
         {
             for ( j = 1; j <= i; j++)
             {
-                printf("%d ", j);
-            }
-            for ( j = i + 1 ; j <= 8-i; j++)
-            {
-                printf("  ");
-            }
-            
-            for ( j = i; j >= 1; j--)
-            {
-                printf("%d ", j);
+                printf("%d ", k);
+                k++;
             }
             printf("\n");
         }

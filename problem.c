@@ -452,33 +452,52 @@ int main()
     // }
 
 // 20.
+    // {
+    //     int i,j;
+    //     for ( i =1; i <=5; i++)
+    //     {
+    //         for ( j = 1; j <=10 ; j++)
+    //         {
+    //             if (j<=i||j>=11-i)
+    //             {
+    //                 printf("*");
+    //             }
+    //             else
+    //                printf(" ");
+    //         }
+    //         printf("\n");
+    //     }
+    //     for ( i = 6;i <=9; i++)
+    //     {
+    //         for ( j = 1; j <=10;j++)
+    //         {
+    //             if(j<=10-i||j>i)
+    //             {
+    //                 printf("*");
+    //             }
+    //             else
+    //                printf(" ");
+    //         }
+    //          printf("\n");
+    //     }
+    //    return 0;
+    // }
+
+// 21.
     {
         int i,j;
-        for ( i =1; i <=5; i++)
+        for ( i = 1; i <= 4; i++)
         {
-            for ( j = 1; j <=10 ; j++)
+            for ( j = 1; j <= 4; j++)
             {
-                if (j<=i||j>=11-i)
+                if (i==1||i==4||j==1||j==4)
                 {
                     printf("*");
                 }
                 else
-                   printf(" ");
+                    printf(" ");
             }
             printf("\n");
         }
-        for ( i = 6;i <=9; i++)
-        {
-            for ( j = 1; j <=10;j++)
-            {
-                if(j<=10-i||j>i)
-                {
-                    printf("*");
-                }
-                else
-                   printf(" ");
-            }
-             printf("\n");
-        }
-       return 0;
+        return 0;
     }

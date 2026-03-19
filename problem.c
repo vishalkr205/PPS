@@ -79,10 +79,12 @@ int main()
 
 // 1. 
 // {
-//     int i,j;
-//     for ( i = 1; i <= 5; i++)
+//     int i,j,n;
+//     printf("enter no of line");
+//     scanf("%d",&n);
+//     for ( i = 1; i <= n; i++)
 //     {
-//         for ( j= 0; j <=5 ; j++)
+//         for ( j= 0; j <=n ; j++)
 //         {
 //             printf("*");
 //         }
@@ -93,11 +95,11 @@ int main()
 
 
 // 2. 
-    
 // {
-//     int i,j;
-
-//     for ( i = 1; i <= 5; i++)
+//     int i,j,n;
+//     printf("ENTER NO OF LINE");
+//     scanf("%d",&n);
+//     for ( i = 1; i <= n; i++)
 //     {
 //         for ( j = 1; j <= i ; j++)
 //         {
@@ -109,11 +111,11 @@ int main()
 // }
 
 // 3. digit
-
 // {
-//     int i,j;
-
-//     for  (i = 1; i < 5; i++)
+//     int i,j,n;
+//     printf("ENTER NO OF LINE");
+//     scanf("%d",&n);
+//     for  (i = 1; i <= n; i++)
 //     {
 //         for ( j = 1; j <= i ; j++)
 //         {
@@ -125,10 +127,11 @@ int main()
 // }
 
 // 4. 
-
 // {
-//     int i,j;
-//     for ( i = 1; i <= 5; i++)
+//     int i,j,n;
+//     printf("ENTER NO OF LINE");
+//     scanf("%d",&n);
+//     for ( i = 1; i <= n; i++)
 //     {
 //         for ( j = 1; j <= i; j++)
 //         {
@@ -141,9 +144,10 @@ int main()
 
 // 5. 
 // {
-//         int i,j;
-
-//     for ( i = 5; i >= 1 ; i--)
+//         int i,j,n;
+//     printf("ENTER NO OF LINE");
+//     scanf("%d",&n);
+//     for ( i = n; i >= 1 ; i--)
 //     {
 //         for ( j = 1; j <= i; j++)
 //         {
@@ -156,30 +160,32 @@ int main()
 
 
 // 6.
-
 // {
-//     int i,j;
-
-// for (i = 5; i >=1 ; i--)
-// {
-//     for ( j = 1; j <= i; j++)
+//     int i,j,n;
+//     printf("ENTER NO OF LINE");
+//     scanf("%d",&n);
+//     for (i = n; i >=1 ; i--)
 //     {
-//         printf("%d ", j);
+//         for ( j = 1; j <= i; j++)
+//         {
+//             printf("%d ", j);
+//         }
+//         printf("\n");
 //     }
-//     printf("\n");
-// }
-// return 0;
+//     return 0;
 // }
 
 
 // 7. 
     // {
-    // int i,j;
-    // for ( i = 5; i >= 1; i--)
+    // int i,j,n;
+    // printf("ENTER NO OF LINE");
+    // scanf("%d",&n);
+    // for ( i = n; i >= 1; i--)
     // {
-    //     for ( j = 1; j <= 9; j++)
+    //     for ( j = 1; j <= 2*n-1; j++)
     //     {
-    //         if (j>=i && j<=10-i)
+    //         if (j>=i && j<=2*n-i)
     //         {
     //             printf("*");
     //         }
@@ -194,12 +200,14 @@ int main()
 
 // 8.
 // {
-//     int i,j;
-//     for ( i = 1; i <= 5; i++)
+//     int i,j,n;
+//     printf("ENTER NO OF LINE");
+//     scanf("%d",&n);
+//     for ( i = 1; i <= n; i++)
 //     {
-//         for ( j = 1; j <= 9 ; j++)
+//         for ( j = 1; j <= 2*n-1 ; j++)
 //         {
-//             if (j<=10-i && j>=i)
+//             if (j<=2*n-i && j>=i)
 //             {
 //                 printf("*");
 //             }
@@ -213,13 +221,14 @@ int main()
 
 // 9.
 //     {
-//     int i,j;
-    
-//         for ( i = 5; i >= 1; i--)
+//     int i,j,n;
+//     printf("ENTER NO OF LINE");
+//     scanf("%d",&n);
+//         for ( i = n/2; i >= 1; i--)
 //         {
-//         for ( j = 1; j <= 9; j++)
+//         for ( j = 1; j <= 2*n-1; j++)
 //         {
-//             if (j>=i && j<=10-i)
+//             if (j>=i && j<=n-i)
 //             {
 //                 printf("*");
 //             }
@@ -228,11 +237,11 @@ int main()
 //         }
 //         printf("\n");
 //     }
-//         for ( i = 6; i <= 10; i++)
+//         for ( i = n/2+1; i <= n; i++)
 //         {
-//         for ( j = 1; j <= 9 ; j++)
+//         for ( j = 1; j <= n-1 ; j++)
 //         {
-//             if (j <= 15-i && j >= i - 5)
+//             if (j <= n+n/2-i && j >= i - n/2)
 //             {
 //                 printf("*");
 //             }
@@ -246,8 +255,10 @@ int main()
 
 // 10.
 // {
-//     int i,j;
-//     for ( i = 1; i <= 5; i++)
+//     int i,j,n;
+//     printf("ENTER NO OF LINE");
+//     scanf("%d",&n);
+//     for ( i = 1; i <= n; i++)
 //     {
 //         for ( j = 1; j <= i; j++)
 //         {
@@ -255,9 +266,9 @@ int main()
 //         }
 //         printf("\n");
 //     }
-//     for ( i = 6; i <= 9; i++)
+//     for ( i = n +1; i <= 2*n-1; i++)
 //     {
-//         for ( j = 1; j <= 10-i; j++)
+//         for ( j = 1; j <= 2*n-i; j++)
 //         {
 //             printf("*");
 //         }
@@ -268,8 +279,10 @@ int main()
 
 // 11.
     // {
-    //     int i,j;
-    //     for ( i = 1; i <= 5; i++)
+    //     int i,j,n;
+    // printf("ENTER NO OF LINE");
+    // scanf("%d",&n);
+    //     for ( i = 1; i <= n; i++)
     //     {
     //         for ( j = 1; j <= i ; j++)
     //         {
@@ -285,20 +298,21 @@ int main()
     //     return 0;
     // }
 
-    // 12.
+// 12.
     // {
-    //     int i,j;
-    //     for ( i = 1; i <= 4; i++)
+    //     int i,j,n;
+    //     printf("ENTER NO OF LINE");
+    //     scanf("%d",&n);
+    //     for ( i = 1; i <= n; i++)
     //     {
     //         for ( j = 1; j <= i; j++)
     //         {
     //             printf("%d ", j);
     //         }
-    //         for ( j = i + 1 ; j <= 8-i; j++)
+    //         for ( j = i + 1 ; j <= 2*n-i; j++)
     //         {
     //             printf("  ");
     //         }
-            
     //         for ( j = i; j >= 1; j--)
     //         {
     //             printf("%d ", j);
@@ -308,11 +322,13 @@ int main()
     //     return 0;
     // }
 
-    // 13.
+// 13.
     // {
-    //     int i,j,k;
+    //     int i,j,k,n;
     //     k=1;
-    //     for ( i = 1; i <= 5; i++)
+    //     printf("ENTER NO OF LINE");
+    //     scanf("%d",&n);
+    //     for ( i = 1; i <= n; i++)
     //     {
     //         for ( j = 1; j <= i; j++)
     //         {
@@ -324,10 +340,12 @@ int main()
     //     return 0;
     // }
 
-    // 14.
+// 14.
         // {
-        //     int i,j,k;
-        //     for ( i = 1; i <= 5; i++)
+        //     int i,j,k,n;
+        //     printf("ENTER NO OF LINE");
+        //     scanf("%d",&n);
+        //     for ( i = 1; i <= n; i++)
         //     {
         //         k='A';
         //         for ( j = 1; j <= i; j++)
@@ -342,8 +360,10 @@ int main()
 
 // 15.
     // {
-    //     int i,j,k;
-    //     for ( i = 5; i >= 1; i--)
+    //     int i,j,k,n;
+    //     printf("ENTER NO OF LINE");
+    //     scanf("%d",&n);
+    //     for ( i = n; i >= 1; i--)
     //     {
     //         k='A';
     //         for ( j = 1; j <= i; j++)
@@ -358,10 +378,11 @@ int main()
 
 // 16.
     // {
-    //     int i,j,k;
+    //     int i,j,k,n;
+    //     printf("ENTER NO OF LINE");
+    //     scanf("%d",&n);
     //     k='A';
-    //     for ( i = 1; i <= 5; i++)
-            
+    //     for ( i = 1; i <= n; i++)
     //     {
     //         for ( j = 1; j <= i; j++)
     //         {
@@ -374,33 +395,35 @@ int main()
     // }
 
 // 17.
-    // {
-    //     int i,j,k;
-    //     for ( i = 1; i <= 4; i++)
-    //     {   
-    //         // for spaces
-    //         for ( j = 1; j <= 4-i ; j++)
-    //         {
-    //             printf("  ");
-    //         }
-    //         // printf("\n");
-    //         k='A';
-    //         for ( j = 1; j <= i; j++)
-    //         {
-    //             printf("%c ", k);
-    //             k++; 
-    //         }
-    //         k = k-2;
-    //         for ( j = i-1; j >= 1; j--)
-    //         {
-    //             printf("%c ", k);
-    //             k--;
-    //         }
-            
-    //         printf("\n");
-    //     }
-    //     return 0;
-    // }
+    {
+        int i,j,k,n;
+        printf("ENTER NO OF LINE");
+        scanf("%d",&n);
+        for ( i = 1; i <= n; i++)
+        {   
+            // for spaces
+            for ( j = 1; j <= n-i ; j++)
+            {
+                printf("  ");
+            }
+            // printf("\n");
+            k='A';
+            for ( j = 1; j <= i; j++)
+            {
+                printf("%c ", k);
+                k++; 
+            }
+            k = k-2;
+            for ( j = i-1; j >= 1; j--)
+            {
+                printf("%c ", k);
+                k--;
+            }
+            printf("\n");
+        }
+        return 0;
+    }
+
 // 18.
     // {
     //     int i,j;
@@ -503,33 +526,28 @@ int main()
     // }
 
 // 22.
-    {
-        int i,j;
-        
-        for ( i = 1; i <= 7; i++)
-        {
-            for ( j = 1; j <= 7; j++)
-            {
-                if (i==1||i==7||j==1||j==7)
-                {
-                    printf("4 ");
-                    
-                }
-                else if (i==2||i==6||j==2||j==6)
-                {
-                    printf("3 ");
-                    
-                }
-                else if (i==3||i==5||j==3||j==5)
-                {
-                    printf("2 ");
-                    
-                }
-                else
-                printf("1 ");
-
-            }
-            printf("\n");
-        }
-        return 0;
-    }
+    // {
+    //     int i,j;
+    //     for ( i = 1; i <= 7; i++)
+    //     {
+    //         for ( j = 1; j <= 7; j++)
+    //         {
+    //             if (i==1||i==7||j==1||j==7)
+    //             {
+    //                 printf("4 ");
+    //             }
+    //             else if (i==2||i==6||j==2||j==6)
+    //             {
+    //                 printf("3 ");
+    //             }
+    //             else if (i==3||i==5||j==3||j==5)
+    //             {
+    //                 printf("2 ");
+    //             }
+    //             else
+    //             printf("1 ");
+    //         }
+    //         printf("\n");
+    //     }
+    //     return 0;
+    // }

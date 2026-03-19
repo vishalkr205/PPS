@@ -395,38 +395,38 @@ int main()
     // }
 
 // 17.
-    {
-        int i,j,k,n;
-        printf("ENTER NO OF LINE");
-        scanf("%d",&n);
-        for ( i = 1; i <= n; i++)
-        {   
-            // for spaces
-            for ( j = 1; j <= n-i ; j++)
-            {
-                printf("  ");
-            }
-            // printf("\n");
-            k='A';
-            for ( j = 1; j <= i; j++)
-            {
-                printf("%c ", k);
-                k++; 
-            }
-            k = k-2;
-            for ( j = i-1; j >= 1; j--)
-            {
-                printf("%c ", k);
-                k--;
-            }
-            printf("\n");
-        }
-        return 0;
-    }
+    // {
+    //     int i,j,k,n;
+    //     printf("ENTER NO OF LINE");
+    //     scanf("%d",&n);
+    //     for ( i = 1; i <= n; i++)
+    //     {   
+    //         // for spaces
+    //         for ( j = 1; j <= n-i ; j++)
+    //         {
+    //             printf("  ");
+    //         }
+    //         // printf("\n");
+    //         k='A';
+    //         for ( j = 1; j <= i; j++)
+    //         {
+    //             printf("%c ", k);
+    //             k++; 
+    //         }
+    //         k = k-2;
+    //         for ( j = i-1; j >= 1; j--)
+    //         {
+    //             printf("%c ", k);
+    //             k--;
+    //         }
+    //         printf("\n");
+    //     }
+    //     return 0;
+    // }
 
 // 18.
     // {
-    //     int i,j;
+    //     int i,j,n;
     //     char k;
     //     for ( i = 1; i <= 5; i++)
     //     {
@@ -443,36 +443,38 @@ int main()
     // }
 
 // 19.
-    // {
-    //     int i,j;
-    //     for ( i = 1; i <= 5; i++)
-    //     {
-    //         for ( j = 1; j <= 10; j++)
-    //         {
-    //             if(j<=6-i||j>=5+i)
-    //             {
-    //                 printf("*");
-    //             }
-    //         else
-    //             printf(" ");
-    //         }
-    //         printf("\n");
-    //     }
-    //     for ( i = 6; i <= 10; i++)
-    //     {
-    //         for ( j=1; j <= 10;j++)
-    //         {
-    //             if (j<=i-5||j>=16-i)
-    //         {
-    //             printf("*");
-    //         }
-    //         else
-    //             printf(" ");
-    //         }
-    //         printf("\n");
-    //     }
-    //     return 0;
-    // }
+    {
+        int i,j,n;
+        printf("ENTER NO OF LINE");
+        scanf("%d",&n);
+        for ( i = 1; i <= n/2; i++)
+        {
+            for ( j = 1; j <= n; j++)
+            {
+                if(j<=n/2+1-i||j>=n/2+i)
+                {
+                    printf("*");
+                }
+            else
+                printf(" ");
+            }
+            printf("\n");
+        }
+        for ( i = n/2; i <= n; i++)
+        {
+            for ( j=1; j <= n;j++)
+            {
+                if (j<=i-n/2||j>=n+n/2+1-i)
+            {
+                printf("*");
+            }
+            else
+                printf(" ");
+            }
+            printf("\n");
+        }
+        return 0;
+    }
 
 // 20.
     // {

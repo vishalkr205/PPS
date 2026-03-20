@@ -511,49 +511,85 @@ int main()
     // }
 
 // 21.
-    {
-        int i,j,n;
-        printf("ENTER NO OF LINE");
-        scanf("%d",&n);
-        for ( i = 1; i <= n; i++)
-        {
-            for ( j = 1; j <= n; j++)
-            {
-                if (i==1||i==n||j==1||j==n)
-                {
-                    printf("*");
-                }
-                else
-                    printf(" ");
-            }
-            printf("\n");
-        }
-        return 0;
-    }
-
-// 22.
     // {
-    //     int i,j;
-    //     for ( i = 1; i <= 7; i++)
+    //     int i,j,n;
+    //     printf("ENTER NO OF LINE");
+    //     scanf("%d",&n);
+    //     for ( i = 1; i <= n; i++)
     //     {
-    //         for ( j = 1; j <= 7; j++)
+    //         for ( j = 1; j <= n; j++)
     //         {
-    //             if (i==1||i==7||j==1||j==7)
+    //             if (i==1||i==n||j==1||j==n)
     //             {
-    //                 printf("4 ");
-    //             }
-    //             else if (i==2||i==6||j==2||j==6)
-    //             {
-    //                 printf("3 ");
-    //             }
-    //             else if (i==3||i==5||j==3||j==5)
-    //             {
-    //                 printf("2 ");
+    //                 printf("*");
     //             }
     //             else
-    //             printf("1 ");
+    //                 printf(" ");
     //         }
     //         printf("\n");
     //     }
     //     return 0;
     // }
+
+// 22.
+    // {
+    //     int i,j,n;
+    //     printf("ENTER NO OF LINE");
+    //     scanf("%d",&n);
+    //     for ( i = 1; i <= 2*n-1; i++)
+    //     {
+    //         for ( j = 1; j <= 2*n-1; j++)
+    //         {
+
+    //             // if (i==1||i==2*n-1||j==1||j==2*n-1)
+    //             // {
+    //             //     printf("%d ",n);
+    //             //     n--;
+    //             // }
+    //             // else
+    //             // printf(" ");
+    //             // else if (i==2||i==6||j==2||j==6)
+    //             // {
+    //             //     printf("3 ");
+    //             // }
+    //             // else if (i==3||i==5||j==3||j==5)
+    //             // {
+    //             //     printf("2 ");
+    //             // }
+    //             // else
+    //             // printf("1 ");
+    //         }
+    //         printf("\n");
+    //     }
+    //     return 0;
+    // }
+
+// 22.
+    {
+        int i,j,k;
+        printf("ENTER NO OF LINE");
+        scanf("%d",&k);
+        for ( i = 1; i <=2*k-1; i++)
+        {
+            for ( j = 1; j <= 2*k-1; j++)
+            {
+                int min=i;
+                if (j<i)
+                {
+                    min=j;
+                }
+                if (2*k-i<min)
+                {
+                min=2*k-i;
+                }
+                if (2*k-j<min)
+                {
+                min=2*k-j;
+                }
+                printf("%d ",k-min+1);
+            }
+            printf("\n");
+            
+        }
+        return 0;
+    } 

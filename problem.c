@@ -565,31 +565,64 @@ int main()
     // }
 
 // 22.
-    {
-        int i,j,k;
-        printf("ENTER NO OF LINE");
-        scanf("%d",&k);
-        for ( i = 1; i <=2*k-1; i++)
-        {
-            for ( j = 1; j <= 2*k-1; j++)
-            {
-                int min=i;
-                if (j<i)
-                {
-                    min=j;
-                }
-                if (2*k-i<min)
-                {
-                min=2*k-i;
-                }
-                if (2*k-j<min)
-                {
-                min=2*k-j;
-                }
-                printf("%d ",k-min+1);
-            }
-            printf("\n");
+    // {
+    //     int i,j,k;
+    //     printf("ENTER NO OF LINE");
+    //     scanf("%d",&k);
+    //     for ( i = 1; i <=2*k-1; i++)
+    //     {
+    //         for ( j = 1; j <= 2*k-1; j++)
+    //         {
+    //             int min=i;
+    //             if (j<i)
+    //             {
+    //                 min=j;
+    //             }
+    //             if (2*k-i<min)
+    //             {
+    //             min=2*k-i;
+    //             }
+    //             if (2*k-j<min)
+    //             {
+    //             min=2*k-j;
+    //             }
+    //             printf("%d ",k-min+1);
+    //         }
+    //         printf("\n");
             
+    //     }
+    //     return 0;
+    // } 
+
+
+    // factorial of a number
+
+    // {
+    //     int n,i;
+    //     int fact =1;
+    //     printf("enter num");
+    //     scanf("%d",&n);
+    //     for ( i = n; i >= 1; i--)
+    //     {
+    //         fact=fact*i;
+    //     }
+    //     printf("%d ",fact);
+    //     return 0;
+    // }
+
+// Q. sum of all numbers from 1 to 100 which are divisible by 3
+{
+    int i,n,sum=0;
+    printf("enter number for sum");
+    scanf("%d",&n);
+    for ( i = 1; i <= n; i++)
+    {
+        if (i%3==0)
+        {
+            sum += i;
         }
-        return 0;
-    } 
+        
+    }
+    printf("%d",sum);
+    return 0;
+}
